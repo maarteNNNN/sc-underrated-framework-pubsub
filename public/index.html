@@ -115,7 +115,7 @@
       const createMessage = ({ socketId, timestamp, message }) => {
         const messageElement = document.createElement('div');
         messageElement.className = 'message';
-        messageElement.innerHTML = `<strong>${socketId}</strong> <small>${timestamp}:</small> \t\t\t ${message}`;
+        messageElement.innerHTML = `<strong>${socketId}</strong> <small>${timestamp}:</small> ${message}`;
 
         chatHistoryElement.appendChild(messageElement);
       };

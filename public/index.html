@@ -118,6 +118,8 @@
         messageElement.innerHTML = `<strong>${socketId}</strong> <small>${timestamp}:</small> ${message}`;
 
         chatHistoryElement.appendChild(messageElement);
+
+        chatHistoryElement.scrollTop = chatHistoryElement.scrollHeight
       };
 
       (async () => {
